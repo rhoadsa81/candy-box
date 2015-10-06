@@ -2,7 +2,13 @@
 
 The goal of this challenge is to create a game like [this one](http://candies.aniwey.net/).
 
-## Adapter.js
+## Usage
+
+All of your JavaScript code should go in `js/game.js`. It's mostly blank, have fun!
+
+I have already given you an element with id "candy-counter". It should be used to show the candy count!
+
+### Adapter.js
 
 I have provided `js/adapter.js` to interface with the DOM. You should not have to modify it to complete this project (but if you have improvements I'd be interested to see them!). The `adapter.js` file defines these functions:
 
