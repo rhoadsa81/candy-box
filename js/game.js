@@ -4,7 +4,9 @@ $(document).ready(function() {
     GAME.setText('candy-counter', 'You have' + GAME.candies +'candies');
     
     GAME.getMoreCandies():
-    GAME.setTExt('candy-counter', 'You have' + GAME.candies +'candies');
+    GAME.redraw();
+    
+    setInterval(GAME.getMoreCandies, 500);
 });
 
  GAME. getMoreCandies = function(){
