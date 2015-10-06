@@ -3,6 +3,12 @@ var GAME = {
         $(".candy-section").append("<button id=\"" + id + "\">" + buttonText + "</button>");
         $("#" + id).on("click", clickFunction)
     },
+    disableButton: function(id) {
+        $("#" + id).prop("disabled", true);
+    },
+    enableButton: function(id) {
+        $("#" + id).prop("disabled", false);
+    },
     addTextBox: function(id, text) {
         $(".candy-section").append("<p id=\"" + id + "\">" + text + "</p>");
     },
