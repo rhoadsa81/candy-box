@@ -6,6 +6,11 @@ $(document).ready(function() {
     GAME.getMoreCandies():
     GAME.setTExt('candy-counter', 'You have' + GAME.candies +'candies');
 });
+
  GAME. getMoreCandies = function(){
      GAME.candies = GAME.candies +1;
+ }
+ 
+ GAME.redraw = function(){
+     GAME.setText('candy-counter', 'You have' + GAME.candies +'candies');
  }
