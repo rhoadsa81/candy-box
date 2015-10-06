@@ -6,6 +6,6 @@ $(document).ready(function() {
     GAME.getMoreCandies():
     GAME.setTExt('candy-counter', 'You have' + GAME.candies +'candies');
 });
- function getMoreCandies(){
+ GAME. getMoreCandies = function(){
      GAME.candies = GAME.candies +1;
  }
