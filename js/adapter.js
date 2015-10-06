@@ -6,6 +6,9 @@ var GAME = {
     addTextBox: function(id, text) {
         $(".candy-section").append("<p id=\"" + id + "\">" + text + "</p>");
     },
+    hasItem: function(id) {
+        return $("#" + id).length !== 0;
+    },
     removeElement: function(id) {
         $("#" + id).remove();
     },

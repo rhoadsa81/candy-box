@@ -16,6 +16,7 @@ I have provided `js/adapter.js` to interface with the DOM. You should not have t
 |------|-------------|
 | `GAME.addButton(id, text, handler)` | Adds a button to the page. `id` is a unique identifier for this button, `text` is the button text, and `handler` is the event handler for when the button is pressed. |
 | `GAME.addTextBox(id, text)` | Adds text to the page with unique id `id` and text `text` |
+| `GAME.hasItem(id)` | Returns `true` or `false` depending on whether the DOM has an element with that `id` or not |
 | `GAME.removeElement(id)` | Removes the element with id `id` |
 | `GAME.removeHandler(id, handler)` | Removes the provided handler from the element with the given `id` |
 | `GAME.addHander(id, handler)` | Adds the provided handler from the element with the given `id` |
