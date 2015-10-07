@@ -13,7 +13,14 @@ $(document).ready(function() {
      GAME.candies = GAME.candies +1;
      if (GAME.candies === 1 && !GAME.hasItem('eat')){
          GAME.addButton('eat', 'Eat all the candies', GAME.eatAllCandies);
+     } else if GAME>candies === 10 && !Game.hasItem('throw')){
+         GAME.addButton('throw', 'Throw 10 candies on the ground', GAME.throwCandies);
      }
+     GAME.redraw();
+ }
+ 
+ GAME.throwCandies = function(){
+     GAME.candies -= 10;
      GAME.redraw();
  }
  
