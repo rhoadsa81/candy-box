@@ -6,11 +6,19 @@ $(document).ready(function() {
     GAME.getMoreCandies():
     GAME.redraw();
     
-    setInterval(GAME.getMoreCandies, 500);
+    setInterval(GAME.getMoreCandies, 750);
 });
 
- GAME. getMoreCandies = function(){
+ GAME.getMoreCandies = function(){
      GAME.candies = GAME.candies +1;
+     if (GAME.candies === 1){
+         GAME.addButton('eat', 'Eat all the candies', GAME.eatAllCandies);
+     }
+ }
+ 
+ GAME.eatAllCandies = function(){
+     GAME.candies = 0;
+     GAME.redraw();
  }
  
  GAME.redraw = function(){
