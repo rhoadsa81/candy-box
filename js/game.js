@@ -11,9 +11,10 @@ $(document).ready(function() {
 
  GAME.getMoreCandies = function(){
      GAME.candies = GAME.candies +1;
-     if (GAME.candies === 1){
+     if (GAME.candies === 1 && !GAME.hasItem('eat')){
          GAME.addButton('eat', 'Eat all the candies', GAME.eatAllCandies);
      }
+     GAME.redraw();
  }
  
  GAME.eatAllCandies = function(){
